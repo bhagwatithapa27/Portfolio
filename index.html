@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhagwati Thapa | Portfolio</title>
+    <!-- Custom Stylesheet------------- -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome------------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      /* Smooth scrolling for the page-------------- */
+     html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body></style>
+  </head>
+  <body>
+    <!-- HEADER///////////////// -->
+    <header id="header">
+      <div class="main-container">
+        <h1 class="logo">
+          Hi, I'm <span>Bhagwati</span><br />
+          Thapa from Nepal
+        </h1>
+        <div class="intro-text">
+          <p></p>
+          <h2>Computer Science Student</h2>
+        </div>
+        <nav style="margin-top: 30px;">
+  <ul>
+    <li><a href="#header" style="font-weight:700;">Home</a></li>
+    <li><a href="#about" style="font-weight:700;">About</a></li>
+    <li><a href="#skills-learning" style="font-weight:700;">Skills & Learning</a></li>
+    <li><a href="#portfolio" style="font-weight:700;">Portfolio</a></li>
+    <li><a href="#contact" style="font-weight:700;">Contact</a></li>
+  </ul>
+</nav>
+
+      </div>
+    </header>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about">
+      <div class="main-container">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          Hi, I’m Bhagawati Thapa, a second-year Computer Science student at
+          NCIT College and a passionate frontend developer in progress. I love
+          transforming ideas into clean, responsive, and engaging web
+          experiences using HTML, CSS, and JavaScript. With a creative eye for
+          design and hands-on experience in Figma, I focus on building
+          interfaces that are both visually appealing and user-friendly. I’m
+          constantly learning, exploring new technologies, and challenging
+          myself through real-world projects to grow into a confident and
+          impactful developer.
+        </p>
+        <p></p>
+        <!-- Tabs -->
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="openTab(event, 'skills')">
+            <strong>Skills</strong>
+          </p>
+          <p class="tab-links" onclick="openTab(event, 'experience')">
+            <strong>Experience</strong>
+          </p>
+          <p class="tab-links" onclick="openTab(event, 'education')">
+            <strong>Education</strong>
+          </p>
+        </div>
+
+        <!-- Tab Contents -->
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>C Programming</span> – Academic projects & practice</li>
+            <li><span>HTML & CSS</span> – Responsive web design</li>
+            <li><span>JavaScript</span> – Beginner level</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li>
+              <span>Minor Project – Adventure Nepal</span> – Diploma project
+            </li>
+            <li>
+              <span>Major Project – Adventure Nepal</span> – Final year diploma
+              project
+            </li>
+            <li>
+              <span>School Management System</span> – BCA 1st year project
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>BCA</span> – Pokhara University (Ongoing)</li>
+            <li>
+              <span>Diploma in Computer Engineering</span> – ACME College,
+              Lalitpur
+            </li>
+            <li><span>School Level</span> – Bardiya</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS & LEARNING//////////////// -->
+    <section id="skills-learning">
+      <div class="main-container">
+        <h2 class="section-title">Skills & Learning</h2>
+        <div class="service-cards">
+          <div class="card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Programming</h3>
+            <p>
+              Working on C, JavaScript projects and problem-solving exercises.
+            </p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-network-wired"></i>
+            <h3>Networking</h3>
+            <p>Learning computer network fundamentals and concepts.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h3>Mobile App Dev</h3>
+            <p>Learning to create apps for Android and iOS devices.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-database"></i>
+            <h3>Database Basics</h3>
+            <p>Getting familiar with MySQL and data management techniques.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Problem Solving</h3>
+            <p>Practicing coding problems and algorithms step by step.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Cybersecurity</h3>
+            <p>Understanding online safety and basic security practices.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Web Design</h3>
+            <p>Learning HTML, CSS, and responsive web design techniques.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-paintbrush"></i>
+            <h3>UI Design</h3>
+            <p>Exploring UI/UX principles to enhance user experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+
+    <section id="portfolio">
+      <div class="main-container">
+        <h2 class="section-title">My Work</h2>
+        <div class="portfolio-list">
+          <div class="portfolio-item">
+            <img
+              src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg"
+              alt="Social Media App"
+            />
+            <div class="overlay">
+              <h3>Social Media App</h3>
+              <p>
+                Connect and share with friends, post updates, and enjoy
+                real-time notifications.
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img
+              src="https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg"
+              alt="Music App"
+            />
+            <div class="overlay">
+              <h3>Music App</h3>
+              <p>
+                Create playlists, listen to your favorite songs, and explore new
+                music easily.
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img
+              src="https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg"
+              alt="Shopping App"
+            />
+            <div class="overlay">
+              <h3>Shopping App</h3>
+              <p>
+                Browse products, add to cart, and enjoy secure payments and fast
+                delivery.
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img
+              src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
+              alt="Education App"
+            />
+            <div class="overlay">
+              <h3>Education App</h3>
+              <p>
+                Learn new skills online, watch video tutorials, and track your
+                progress easily.
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img
+              src="https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg"
+              alt="Fitness App"
+            />
+            <div class="overlay">
+              <h3>Fitness App</h3>
+              <p>
+                Track workouts, monitor calories, and stay healthy with daily
+                fitness goals.
+              </p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img
+              src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg"
+              alt="Food Delivery App"
+            />
+            <div class="overlay">
+              <h3>Food Delivery App</h3>
+              <p>
+                Order your favorite meals online, track delivery in real-time,
+                and enjoy fast doorstep service.
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img
+              src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg"
+              alt="Banking App"
+            />
+            <div class="overlay">
+              <h3>Banking App</h3>
+              <p>
+                Manage your account, transfer money securely, and check
+                transaction history anytime.
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img
+              src="https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg"
+              alt="Travel App"
+            />
+            <div class="overlay">
+              <h3>Travel App</h3>
+              <p>
+                Book flights and hotels, explore destinations, and plan your
+                trips conveniently.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn">See More</a>
+      </div>
+    </section>
+    <!-- CONTACT -->
+  <section id="contact">
+    <div class="main-container contact-container">
+      <!-- Left: Info -->
+      <div class="contact-info">
+        <h2 class="section-title">Get in Touch</h2>
+        <p><strong>Looking forward to hearing from you</strong></p>
+
+        <p><i class="fa-solid fa-phone"></i> +977 - 9748276469</p>
+        <p><i class="fa-solid fa-envelope"></i> bhagwatithapa27@gmail.com</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-container">
+        <form action="#" method="POST" class="contact-form">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" rows="5" placeholder="Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+    <!-- SCRIPT FOR TABS -->
+    <script>
+      function openTab(event, tabName) {
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+        for (let i = 0; i < tabLinks.length; i++) {
+          tabLinks[i].classList.remove("active-link");
+        }
+        for (let i = 0; i < tabContents.length; i++) {
+          tabContents[i].classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>

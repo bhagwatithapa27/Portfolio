@@ -1,0 +1,365 @@
+/* ----------------- RESET ----------------- */
+/* Remove default margin/padding and set box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body styling */
+body {
+  background: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Remove underline from links */
+a {
+  text-decoration: none;
+}
+
+/* ----------------- CONTAINER ----------------- */
+/* Center container and set width */
+.main-container {
+  width: 85%;
+  margin: auto;
+}
+
+/* ----------------- HEADER ----------------- */
+/* Fullscreen header with background image & gradient overlay */
+#header {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Logo styling */
+.logo {
+  color: #ff004f;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Underline effect on hover */
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ff004f;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Intro text */
+.intro-text h2 {
+  font-size: 48px;
+}
+
+.intro-text span {
+  color: #ff004f;
+}
+
+/* ----------------- SECTIONS ----------------- */
+/* General section padding */
+section {
+  padding: 60px 0;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 40px;
+  color: #ff004f;
+  margin-bottom: 30px;
+}
+
+/* ----------------- TABS ----------------- */
+/* Tab buttons */
+.tab-titles {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  margin-bottom: 25px;
+}
+
+/* Active tab underline */
+.tab-links.active-link {
+  border-bottom: 3px solid #ff004f;
+}
+
+/* Tab content hidden by default */
+.tab-contents {
+  display: none;
+}
+
+/* Active tab content visible */
+.tab-contents.active-tab {
+  display: block;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.tab-contents span {
+  color: #ff004f;
+  font-weight: bold;
+}
+
+/* ----------------- SERVICES ----------------- */
+/* Service cards grid */
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Card styling */
+.card {
+  background: #1f1f1f;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+/* Card hover effect */
+.card:hover {
+  background: #ff004f;
+  transform: translateY(-8px);
+}
+
+.card i {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* ----------------- PORTFOLIO ----------------- */
+/* Portfolio grid */
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  width: 100%;
+  transition: 0.4s;
+}
+
+/* Overlay for portfolio hover */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), #ff004f);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.4s;
+  padding: 15px;
+}
+
+/* Image zoom effect on hover */
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay expands on hover */
+
+.portfolio-item:hover .overlay {
+  height: 100%;
+}
+
+/* ----------------- BUTTON ----------------- */
+
+.btn {
+  display: inline-block;
+  padding: 7px 20px;
+  border: 1px solid #ff004f;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 30px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff004f;
+}
+
+/* ----------------- CONTACT ----------------- */
+/* Social icons */
+
+.social-icons a {
+  margin-right: 15px;
+  font-size: 25px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff004f;
+}
+
+/* Two-column layout: contact info + form////////////////// */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-form-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Contact form styling//////////// */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  background: #1f1f1f;
+  color: #fff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bbb;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+/* Submit button/////////// */
+.contact-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff004f;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 150px;
+  align-self: flex-start;
+}
+
+.contact-form button:hover {
+  background-color: #e60045;
+}
+
+/* Responsive adjustments for contact form//////////// */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-form button {
+    align-self: stretch;
+  }
+}
+
+/* Contact section heading////////////// */
+#contact .section-title {
+  margin-bottom: 10px;
+}
+
+/* Message below heading////////////////////// */
+.contact-message {
+  margin: 10px 0 15px 0;
+  color: #ccc;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Big animated arrow */
+.arrow-down {
+  font-size: 60px;
+  color: #ff004f;
+  display: block;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  animation: updown 0.8s infinite alternate;
+}
+
+/* Arrow animation */
+@keyframes updown {
+  to {
+    transform: translateY(10px);
+  }
+}
+/* Make both sides equal height */
+.contact-container {
+  align-items: stretch; /* makes both columns same height */
+}
+
+/* Make inner boxes fill full height */
+.contact-info,
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center content */
+}
